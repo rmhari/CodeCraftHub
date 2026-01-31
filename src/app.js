@@ -1,4 +1,5 @@
 require('dotenv').config();
+console.log("DB URI from Env:", process.env.DB_URI); // If this says undefined, the file isn't being read.
 const express = require('express');
 const connectDB = require('./config/db');
 const initServer = require('./config/server');
